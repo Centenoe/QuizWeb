@@ -8,14 +8,12 @@
 
 <?php
 include_once "Controller.php";
-include_once "phpclass/util/Utildbf.php";
-include_once "phpclass/form.php";
-
+include_once "phpclass/util/db.php";
 /**
  * Pull the question from the database
  */
 //TODO: Some how get the quiz id of the what quiz the quiz clicks on the user page, then plug it in to the the query request.
-$final = Utildbf::querQest(1, 1);
+$final = db::querQuest(1, 1);
 $questS = $final['questS'];
 $optS = $final['opts'];
 for ($i = 0; $r = $optS->fetch_assoc(); $i++)

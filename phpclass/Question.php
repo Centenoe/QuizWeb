@@ -9,18 +9,11 @@ class Question {
 
     private $questionId;
     private $questionS;
-    private $questionAnswerId;
 
-    /**
-     * Question constructor.
-     * @param $id
-     * @param $s
-     * @param $AId
-     */
-    public function __construct($id, $s, $AId) {
+
+    public function __construct($id, $s) {
         $this->questionId = $id;
         $this->questionS = $s;
-        $this->questionAnswerId = $AId;
     }
 
     /**

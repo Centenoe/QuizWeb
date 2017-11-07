@@ -5,6 +5,7 @@
  * Time: 8:20 PM
  */
 
+include_once "Question.php";
 class Quiz {
 
     private $quizId;

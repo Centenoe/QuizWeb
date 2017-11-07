@@ -1,6 +1,6 @@
 CREATE TABLE quizweb.Quiz
 (
-    Quiz_id int(11) PRIMARY KEY NOT NULL,
+    Quiz_id int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
     Quiz_name varchar(255),
     Url varchar(255) NOT NULL,
     Date_created date NOT NULL,

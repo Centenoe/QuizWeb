@@ -5,7 +5,7 @@
  */
 include_once "Constf.php";
 
-class Utildbf
+class db
 {
     /**
      * Queury's a specific question in a specific quiz
@@ -15,7 +15,7 @@ class Utildbf
      * @return array if there is data in the qeury or
      *         void if there is no data in the query
      */
-    public static function querQest($quizId, $questionId) {
+    public static function querQuest($quizId, $questionId) {
         $conn = new mysqli(Constf::host, Constf::username, Constf::password, Constf::dbName);
         if ($conn->connect_error)
             die("Connection failed: " . $conn->connect_error);
@@ -31,6 +31,10 @@ class Utildbf
             echo "No Rows were Selected";
             return;
         }
+    }
+
+    public static function querQuests($quizId) {
+
     }
 
     /**
@@ -54,8 +58,24 @@ class Utildbf
         }
     }
 
-    public function querQuiz() {
-
-
+    /**
+     * Querys all data relevant to the specified quiz
+     *
+     * @param $quizId the quiz that is being queryed
+     * @return the quiz information
+     */
+    public static function querQuiz($quizId) {
+        $conn = new mysqli(Constf::host, Constf::username, Constf::password, Constf::dbName);
+        if ($conn->connect_error)
+            die("Connection failed: " . $conn->connect_error);
+        $sql = "SELECT Question_id, Question_S  FROM Quiz WHERE Quiz_id=$quizId";
+        $result = $conn->query($sql);
+        $conn->close();
+        if ($result->num_rows > 0)
+            return $result;
+        else {
+            echo "No Rows were Selected";
+            return;
+        }
     }
 }
