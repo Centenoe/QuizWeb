@@ -8,6 +8,7 @@
 class Constf
 {
     // --- db login ---//
+    //will be different for different computers until on server
     const host = "localhost";
     const username = "root";
     const password = "root";

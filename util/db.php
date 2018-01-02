@@ -33,15 +33,53 @@ class db
         }
     }
 
+    /**
+     * This method querys the questions for a given quiz
+     *
+     * @param $quizId int the quiz that has the questions
+     * @return mysqli_result the questions for the quiz otherwise nothing
+     */
     public static function querQuests($quizId) {
+        $conn = new mysqli(Constf::host, Constf::username, Constf::password, Constf::dbName);
+        if ($conn->connect_error)
+            die("Connection failed: " . $conn->connect_error);
+        $sql = "SELECT Question_id, Question_S FROM Question WHERE Quiz_id=$quizId";
+        $result = $conn->query($sql);
+        $conn->close();
+        if ($result->num_rows > 0) {
+            return $result;
+        } else {
+            echo "No Rows were Selected";
+            return;
+        }
+    }
 
+    /**
+     * Querys the specific optinons for a given question
+     *
+     * @param $questionId int the question that holds all the options
+     * @return mysqli_result the options for the quiz
+     */
+    public static function querOpts($questionId) {
+        $conn = new mysqli(Constf::host, Constf::username, Constf::password, Constf::dbName);
+        if ($conn->connect_error)
+            die("Connection failed: " . $conn->connect_error);
+        $sql = "SELECT Option_id, Option_S FROM Options WHERE Question_id=$questionId";
+        $result = $conn->query($sql);
+        $conn->close();
+        if ($result->num_rows > 0) {
+            return $result;
+        } else {
+            echo "No Rows were Selected";
+            return;
+        }
     }
 
     /**
      * basic query to get the Answer to the given question
      *
      * @param $questionId the question id for the specific answer
-     * @return the result of the query if there is one.
+     * @return the result of the query if there is one
      */
     public static function querAnsw($questionId) {
         $conn = new mysqli(Constf::host, Constf::username, Constf::password, Constf::dbName);
@@ -68,7 +106,7 @@ class db
         $conn = new mysqli(Constf::host, Constf::username, Constf::password, Constf::dbName);
         if ($conn->connect_error)
             die("Connection failed: " . $conn->connect_error);
-        $sql = "SELECT Question_id, Question_S  FROM Quiz WHERE Quiz_id=$quizId";
+        $sql = "SELECT Quiz_name  FROM Quiz WHERE Quiz_id=$quizId";
         $result = $conn->query($sql);
         $conn->close();
         if ($result->num_rows > 0)
@@ -78,4 +116,50 @@ class db
             return;
         }
     }
+
+    /**
+     * this method will insert a quiz into the database based
+     * on the quiz object that was passed in
+     *
+     * @param $quiz the quiz object that will be inserted
+     */
+    public static function insertQuiz($quiz) {
+        $date = date("Y-m-d");
+        $datetime = date("Y-m-d h:i:s");
+
+        $name = $quiz->getQuizName();
+        $sql = "INSERT INTO quizweb.quiz (Quiz_name, Url, Date_created, Date_updated) VALUES ($name, 'test', $date, $datetime);";
+        for ($i = 0; $i < $quiz->getAmntQuests(); $i++) {
+            $questions[$i] = $quiz->getQuestions()[$i];
+            for ($j = 0; $j < $quiz->getQuestions()[$i]->getAmntOpts(); $j++) {
+                $options[$j] = $quiz->getQuestions()[$i]->getOptions()[$j];
+            }
+        }
+        $conn = new mysqli(Constf::host, Constf::username, Constf::password, Constf::dbName);
+        if ($conn->connect_error)
+            die("Connection failed: " . $conn->connect_error);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
