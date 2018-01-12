@@ -7,8 +7,8 @@
 
 class Question {
     // --- Fields --- //
-    private $questionId;
-    private $questionS;
+    private $questionId = 0;
+    private $questionS = "";
     private $options;
 
     /**
@@ -30,9 +30,8 @@ class Question {
      * @param $optionS string the option name
      * @return bool true or false depending if the option was added
      */
-    public function addOption($optionId, $optionS) {
-        $this->options[$optionId] = $optionS;
-        return true;
+    public function addOption($option) {
+        $this->options[] = $option;
     }
 
     /**

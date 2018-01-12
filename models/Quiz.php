@@ -7,10 +7,11 @@
 
 include_once "Question.php";
 
-class Quiz {
+class Quiz
+{
     // --- Fields --- //
-    private $quizId;
-    private $quizName;
+    private $quizId = 0;
+    private $quizName = "";
     private $questions;
 
     /**
@@ -18,7 +19,8 @@ class Quiz {
      *
      * @param $name string the name of the quiz
      */
-    public function __construct($name) {
+    public function __construct($name)
+    {
         $this->quizName = $name;
         $this->questions = array();
     }
@@ -29,7 +31,8 @@ class Quiz {
      * @param $question Question the question object that will be added
      * @return true if the question was added
      */
-    public function addQuestion($question) {
+    public function addQuestion($question)
+    {
         $this->questions[] = $question;
         return true;
     }
@@ -39,7 +42,9 @@ class Quiz {
      *
      * @param $questionId int the question that will be removed
      */
-    public function removeQuestion($questionId) {
+    public function removeQuestion($questionId)
+    {
+        //TODO Fix this because this will not work
         foreach ($this->questions as $q) {
             if ($q->questionId === $questionId) {
                 $this->questions[$q] = null;
@@ -62,7 +67,8 @@ class Quiz {
      *
      * @return int the amount of questions in the quiz
      */
-    public function getAmntQuests() {
+    public function getAmntQuests()
+    {
         return count($this->questions);
     }
 
@@ -96,6 +102,16 @@ class Quiz {
     public function setQuizName(string $quizName)
     {
         $this->quizName = $quizName;
+    }
+
+    public function __toString()
+    {
+        $result =  "Quiz id: " . $this->quizId . "<br>" .
+            "Quiz Name: " . $this->quizName;
+        foreach ($this->getQuestions() as $q) {
+            $result .= $q->getQuestionS() . "<br>";
+        }
+        return $result;
     }
 
 

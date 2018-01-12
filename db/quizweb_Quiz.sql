@@ -6,4 +6,4 @@ CREATE TABLE quizweb.Quiz
     Date_created date NOT NULL,
     Date_updated datetime NOT NULL
 );
-INSERT INTO quizweb.Quiz (Quiz_id, Quiz_name, Url, Date_created, Date_updated) VALUES (1, 'Test Quiz', 'test', '2017-11-03', '2017-11-03 02:57:50');
+INSERT INTO quizweb.Quiz (Quiz_name, Url, Date_created, Date_updated) VALUES ('Test Quiz', 'test', '2017-11-03', '2017-11-03 02:57:50');

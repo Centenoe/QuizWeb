@@ -11,7 +11,7 @@ class Constf
     //will be different for different computers until on server
     const host = "localhost";
     const username = "root";
-    const password = "root";
+    const password = "";
     const dbName = "quizweb";
 
     /**
@@ -20,7 +20,7 @@ class Constf
      * @param $d the data that is going to be slimmed down
      * @return the slim down verson of the string given in the form
      */
-    public static function slimDown($d) {
+    public static function sanatize($d) {
         $d = trim($d);
         $d = stripslashes($d);
         $d = htmlspecialchars($d);

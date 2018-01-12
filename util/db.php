@@ -124,10 +124,13 @@ class db
      * @param $quiz the quiz object that will be inserted
      */
     public static function insertQuiz($quiz) {
-        $date = date("Y-m-d");
-        $datetime = date("Y-m-d h:i:s");
-
-        $name = $quiz->getQuizName();
+        $questions = array();
+        $options = array();
+//        echo "in db file";
+        $date = "'" . date("Y-m-d") . "'";
+        $datetime = "'" . date("Y-m-d h:i:s") . "'";
+//        echo "<br>";
+        $name = "'" . $quiz->getQuizName() . "'";
         $sql = "INSERT INTO quizweb.quiz (Quiz_name, Url, Date_created, Date_updated) VALUES ($name, 'test', $date, $datetime);";
         for ($i = 0; $i < $quiz->getAmntQuests(); $i++) {
             $questions[$i] = $quiz->getQuestions()[$i];
@@ -136,8 +139,14 @@ class db
             }
         }
         $conn = new mysqli(Constf::host, Constf::username, Constf::password, Constf::dbName);
-        if ($conn->connect_error)
+        if ($conn->connect_error) {
+//            echo "Connection Failed";
             die("Connection failed: " . $conn->connect_error);
+        }
+        //TODO this method is still incomplete
+        foreach ($questions as $q){
+            $sql .= "INSERT INTO quizweb.question (Question_id, Quiz_id, Question_S) VALUES ($q->getQuestionId(), , $q->getQuestionS())";
+        }
     }
 }
 
