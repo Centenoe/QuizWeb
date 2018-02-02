@@ -5,7 +5,7 @@
  * Time: 9:38 PM
  */
 include_once "models/Quiz.php";
-include_once "util/db.php";
+include_once "Util/db.php";
 
 class Controller {
     // --- Fields --- //
