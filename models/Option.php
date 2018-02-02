@@ -9,6 +9,7 @@ class Option
 {
     private $optionId;
     private $optionS;
+    private $isAnswer = false;
 
     public function __construct($optionId, $optionS)
     {
@@ -17,9 +18,25 @@ class Option
     }
 
     /**
+     * @return bool
+     */
+    public function isAnswer(): bool
+    {
+        return $this->isAnswer;
+    }
+
+    /**
+     * @param bool $isAnswer
+     */
+    public function setIsAnswer(bool $isAnswer)
+    {
+        $this->isAnswer = $isAnswer;
+    }
+
+    /**
      * @return mixed
      */
-    public function getOptionId()
+    public function getOptionId(): int
     {
         return $this->optionId;
     }
@@ -35,7 +52,7 @@ class Option
     /**
      * @return mixed
      */
-    public function getOptionS()
+    public function getOptionS(): string
     {
         return $this->optionS;
     }

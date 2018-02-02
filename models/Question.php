@@ -39,7 +39,7 @@ class Question {
      *
      * @return int the id
      */
-    public function getQuestionId()
+    public function getQuestionId(): int
     {
         return $this->questionId;
     }
@@ -69,7 +69,7 @@ class Question {
      *
      * @return string the question name. ??
      */
-    public function getQuestionS()
+    public function getQuestionS(): string
     {
         return $this->questionS;
     }
@@ -89,7 +89,8 @@ class Question {
      *
      * @return int the amount of options
      */
-    public function getAmntOpts() {
+    public function getAmntOpts(): int
+    {
         return count($this->getOptions());
     }
 

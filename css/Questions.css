@@ -58,7 +58,7 @@ input[type=radio]:checked + label {
 /*This is for the next button in the form*/
 #next {
     background-color: #FFFFFF;
-    font-family: Courier;
+    font-family: "Times New Roman";
     border: none;
     color: #000000;
     border-radius: 3px;

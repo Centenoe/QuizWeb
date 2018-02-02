@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aceed9c-d009-498c-bc3f-5f6bb97962de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Option.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller.php" afterPath="$PROJECT_DIR$/Controller.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InsertPhp.php" afterPath="$PROJECT_DIR$/InsertPhp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Q1Question1.php" afterPath="$PROJECT_DIR$/Q1Question1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/Questions.css" afterPath="$PROJECT_DIR$/css/Questions.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/quizweb_Quiz.sql" afterPath="$PROJECT_DIR$/db/quizweb_Quiz.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/insertTest.php" afterPath="$PROJECT_DIR$/insertTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Option.php" afterPath="$PROJECT_DIR$/models/Option.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Question.php" afterPath="$PROJECT_DIR$/models/Question.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Quiz.php" afterPath="$PROJECT_DIR$/models/Quiz.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/Constf.php" afterPath="$PROJECT_DIR$/util/Constf.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/db.php" afterPath="$PROJECT_DIR$/util/db.php" />
     </list>
@@ -45,46 +44,46 @@
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="Web Data" type="e3449647:DbNodeDescriptor" />
         <item name="quizweb" type="e3449647:DbNodeDescriptor" />
-        <item name="answer" type="e3449647:DbNodeDescriptor" />
+        <item name="Answer" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="Web Data" type="e3449647:DbNodeDescriptor" />
         <item name="quizweb" type="e3449647:DbNodeDescriptor" />
-        <item name="options" type="e3449647:DbNodeDescriptor" />
+        <item name="Options" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="Web Data" type="e3449647:DbNodeDescriptor" />
         <item name="quizweb" type="e3449647:DbNodeDescriptor" />
-        <item name="question" type="e3449647:DbNodeDescriptor" />
+        <item name="Question" type="e3449647:DbNodeDescriptor" />
       </path>
       <path>
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="Web Data" type="e3449647:DbNodeDescriptor" />
         <item name="quizweb" type="e3449647:DbNodeDescriptor" />
-        <item name="quiz" type="e3449647:DbNodeDescriptor" />
+        <item name="Quiz" type="e3449647:DbNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="insertTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/insertTest.php">
+      <file leaf-file-name="Q1Question1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Q1Question1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state relative-caret-position="45">
+              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsertPhp.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InsertPhp.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InsertPhp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
+            <state relative-caret-position="360">
+              <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding>
                 <element signature="e#6#67#0#PHP" expanded="true" />
               </folding>
@@ -92,40 +91,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5791331d-7584-4049-9b27-7be2eccd0e9c/console.sql">
+      <file leaf-file-name="insertTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/insertTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            <state relative-caret-position="360">
+              <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/util/db.php">
+      <file leaf-file-name="Questions.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/Questions.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="145" column="46" lean-forward="false" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
-              <folding>
-                <marker date="1515036510416" expanded="true" signature="671:750" ph="SELECT Quest... Question" />
-                <marker date="1515036510416" expanded="true" signature="821:868" ph="SELECT Optio... Options" />
-                <marker date="1515036510416" expanded="true" signature="1677:1736" ph="SELECT Quest... Question" />
-                <marker date="1515036510416" expanded="true" signature="2431:2489" ph="SELECT Optio... Options" />
-                <marker date="1515036510416" expanded="true" signature="3187:3249" ph="SELECT Optio... Answer" />
-                <marker date="1515036510416" expanded="true" signature="3902:3944" ph="SELECT Quiz_... Quiz" />
-                <marker date="1515036510416" expanded="true" signature="4680:4790" ph="INSERT INTO quizweb.quiz... " />
-                <marker date="1515036510416" expanded="true" signature="5435:5549" ph="INSERT INTO quizweb.question... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quiz" pinned="false" current-in-tab="false">
-        <entry file="das://table:/6cb69aaa/5791331d-7584-4049-9b27-7be2eccd0e9c/quizweb.quiz">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="180">
+              <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,8 +114,8 @@
       <file leaf-file-name="Constf.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/Constf.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="360">
+              <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -143,8 +124,49 @@
       <file leaf-file-name="Quiz.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Quiz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+            <state relative-caret-position="240">
+              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="766">
+              <caret line="172" column="25" lean-forward="false" selection-start-line="172" selection-start-column="25" selection-end-line="172" selection-end-column="25" />
+              <folding>
+                <marker date="1517335899544" expanded="true" signature="671:750" ph="SELECT Quest... Question" />
+                <marker date="1517335899544" expanded="true" signature="821:868" ph="SELECT Optio... Options" />
+                <marker date="1517335899544" expanded="true" signature="1677:1736" ph="SELECT Quest... Question" />
+                <marker date="1517335899544" expanded="true" signature="2431:2489" ph="SELECT Optio... Options" />
+                <marker date="1517335899544" expanded="true" signature="3187:3249" ph="SELECT Optio... Answer" />
+                <marker date="1517335899544" expanded="true" signature="3902:3944" ph="SELECT Quiz_... Quiz" />
+                <marker date="1517335899544" expanded="true" signature="5251:5341" ph="INSERT INTO quizweb.Quiz... " />
+                <marker date="1517335899544" expanded="true" signature="5321:5341" ph="INSERT INTO quizweb.Quiz... " />
+                <marker date="1517335899544" expanded="true" signature="5627:5707" ph="INSERT INTO quizweb.Question... " />
+                <marker date="1517335899544" expanded="true" signature="5743:5822" ph="INSERT INTO quizweb.Options... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Question.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Question.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1305">
+              <caret line="91" column="38" lean-forward="false" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Option.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Option.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="46" column="32" lean-forward="false" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -153,33 +175,9 @@
       <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+            <state relative-caret-position="135">
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Question.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Question.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="34" />
-              <folding>
-                <element signature="e#6#71#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Option.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Option.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-              <folding>
-                <element signature="e#6#70#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -202,7 +200,6 @@
       <list>
         <option value="$PROJECT_DIR$/Questions.css" />
         <option value="$PROJECT_DIR$/util/utilf.php" />
-        <option value="$PROJECT_DIR$/util/Constf.php" />
         <option value="$PROJECT_DIR$/util/Utilf.php" />
         <option value="$PROJECT_DIR$/util/Utildbf.php" />
         <option value="$PROJECT_DIR$/phpclass/util/Utildbf.php" />
@@ -216,15 +213,17 @@
         <option value="$PROJECT_DIR$/phpclass/Question.php" />
         <option value="$PROJECT_DIR$/Question3.php" />
         <option value="$PROJECT_DIR$/Question2test.php" />
-        <option value="$PROJECT_DIR$/Q1Question1.php" />
-        <option value="$PROJECT_DIR$/Controller.php" />
-        <option value="$PROJECT_DIR$/insertTest.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5791331d-7584-4049-9b27-7be2eccd0e9c/console.sql" />
         <option value="$PROJECT_DIR$/models/Quiz.php" />
-        <option value="$PROJECT_DIR$/models/Option.php" />
-        <option value="$PROJECT_DIR$/models/Question.php" />
-        <option value="$PROJECT_DIR$/InsertPhp.php" />
+        <option value="$PROJECT_DIR$/util/Constf.php" />
+        <option value="$PROJECT_DIR$/Controller.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5791331d-7584-4049-9b27-7be2eccd0e9c/console.sql" />
         <option value="$PROJECT_DIR$/util/db.php" />
+        <option value="$PROJECT_DIR$/InsertPhp.php" />
+        <option value="$PROJECT_DIR$/models/Question.php" />
+        <option value="$PROJECT_DIR$/models/Option.php" />
+        <option value="$PROJECT_DIR$/insertTest.php" />
+        <option value="$PROJECT_DIR$/Q1Question1.php" />
+        <option value="$PROJECT_DIR$/css/Questions.css" />
       </list>
     </option>
   </component>
@@ -235,11 +234,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP from XAMPP" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-21" />
-    <option name="y" value="-20" />
-    <option name="width" value="1936" />
-    <option name="height" value="1092" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -276,14 +273,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="QuizWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="QuizWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="QuizWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuizWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="QuizWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuizWeb" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="db" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="QuizWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -364,11 +371,15 @@
       <workItem from="1514642852339" duration="3051000" />
       <workItem from="1515016531414" duration="7392000" />
       <workItem from="1515216925820" duration="16000" />
+      <workItem from="1516641576874" duration="3109000" />
+      <workItem from="1516731313328" duration="561000" />
+      <workItem from="1517335023420" duration="2221000" />
+      <workItem from="1517508932943" duration="3505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58798000" />
+    <option name="totallyTimeSpent" value="70994000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -380,24 +391,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17004265" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17811158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26385927" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26323318" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3855508" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769045" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -611,120 +622,106 @@
     <entry file="file://$PROJECT_DIR$/phpclass/form.php" />
     <entry file="file://$PROJECT_DIR$/Question2test.php" />
     <entry file="file://$PROJECT_DIR$/bull.php" />
-    <entry file="file://$PROJECT_DIR$/css/Questions.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CreateQuiz.php" />
     <entry file="file://$PROJECT_DIR$/Question3.php" />
-    <entry file="file://$PROJECT_DIR$/Q1Question1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6cb69aaa/5791331d-7584-4049-9b27-7be2eccd0e9c/quizweb.answer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Quiz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/Constf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/6cb69aaa/5791331d-7584-4049-9b27-7be2eccd0e9c/quizweb.answer" />
+    <entry file="das://table:/6cb69aaa/5791331d-7584-4049-9b27-7be2eccd0e9c/quizweb.quiz" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5791331d-7584-4049-9b27-7be2eccd0e9c/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/insertTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InsertPhp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="48" column="26" lean-forward="false" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="26" />
-          <folding>
-            <element signature="e#6#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Option.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6cb69aaa/5791331d-7584-4049-9b27-7be2eccd0e9c/quizweb.quiz">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="34" />
-          <folding>
-            <element signature="e#6#71#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        <state relative-caret-position="135">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="145" column="46" lean-forward="false" selection-start-line="145" selection-start-column="46" selection-end-line="145" selection-end-column="46" />
+        <state relative-caret-position="766">
+          <caret line="172" column="25" lean-forward="false" selection-start-line="172" selection-start-column="25" selection-end-line="172" selection-end-column="25" />
           <folding>
-            <marker date="1515036510416" expanded="true" signature="671:750" ph="SELECT Quest... Question" />
-            <marker date="1515036510416" expanded="true" signature="821:868" ph="SELECT Optio... Options" />
-            <marker date="1515036510416" expanded="true" signature="1677:1736" ph="SELECT Quest... Question" />
-            <marker date="1515036510416" expanded="true" signature="2431:2489" ph="SELECT Optio... Options" />
-            <marker date="1515036510416" expanded="true" signature="3187:3249" ph="SELECT Optio... Answer" />
-            <marker date="1515036510416" expanded="true" signature="3902:3944" ph="SELECT Quiz_... Quiz" />
-            <marker date="1515036510416" expanded="true" signature="4680:4790" ph="INSERT INTO quizweb.quiz... " />
-            <marker date="1515036510416" expanded="true" signature="5435:5549" ph="INSERT INTO quizweb.question... " />
+            <marker date="1517335899544" expanded="true" signature="671:750" ph="SELECT Quest... Question" />
+            <marker date="1517335899544" expanded="true" signature="821:868" ph="SELECT Optio... Options" />
+            <marker date="1517335899544" expanded="true" signature="1677:1736" ph="SELECT Quest... Question" />
+            <marker date="1517335899544" expanded="true" signature="2431:2489" ph="SELECT Optio... Options" />
+            <marker date="1517335899544" expanded="true" signature="3187:3249" ph="SELECT Optio... Answer" />
+            <marker date="1517335899544" expanded="true" signature="3902:3944" ph="SELECT Quiz_... Quiz" />
+            <marker date="1517335899544" expanded="true" signature="5251:5341" ph="INSERT INTO quizweb.Quiz... " />
+            <marker date="1517335899544" expanded="true" signature="5321:5341" ph="INSERT INTO quizweb.Quiz... " />
+            <marker date="1517335899544" expanded="true" signature="5627:5707" ph="INSERT INTO quizweb.Question... " />
+            <marker date="1517335899544" expanded="true" signature="5743:5822" ph="INSERT INTO quizweb.Options... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Quiz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Option.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="46" column="32" lean-forward="false" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="91" column="38" lean-forward="false" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/Constf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/insertTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/Questions.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Q1Question1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InsertPhp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="e#6#67#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

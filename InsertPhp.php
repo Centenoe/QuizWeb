@@ -20,29 +20,33 @@ $countQ = $countO = 0;
  * Then send it to the db function.
  */
 if (isset($_POST['submit'])) {
+
+    //Check the Quiz name
     if (isset($_POST['quizName']))
         $name = Constf::sanatize($_POST['quizName']);
+
+    //Set up the quiz object
     $quiz = new Quiz($name);
+
+    //Check the Questions
     if (isset($_POST['questionS'])) {
         foreach ($_POST['questionS'] as $q) {
             if ($q === "") continue;
             $question = new Question($countQ, Constf::sanatize($q));
+
+            //Check the Choices
             if (isset($_POST['choiceS'])) {
                 foreach ($_POST['choiceS'] as $o) {
                     if ($o === "") continue;
                     $option = new Option($countO, Constf::sanatize($o));
-//                    echo "added option";
                     $countO++;
                     $question->addOption($option);
                 }
             }
             $countO = 0;
             $quiz->addQuestion($question);
-//            echo "added question";
         }
     }
-//    echo "<br>";
-//    echo "Attempting to add a quiz";
     db::insertQuiz($quiz);
 
     $quiz = $name = $question = $option = "";

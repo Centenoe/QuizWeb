@@ -8,12 +8,6 @@ include_once "models/Quiz.php";
 include_once "util/db.php";
 
 class Controller {
-    // --- Fields --- //
-    private static $quizRepo = array();
-
-    public static function insertQuiz() {
-
-    }
 
     /**
      * Quiz to be taken by a user

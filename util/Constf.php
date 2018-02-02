@@ -11,7 +11,7 @@ class Constf
     //will be different for different computers until on server
     const host = "localhost";
     const username = "root";
-    const password = "";
+    const password = "root";
     const dbName = "quizweb";
 
     /**

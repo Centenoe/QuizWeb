@@ -6,6 +6,7 @@ session_start();
 <html>
 <head>
     <title>Quiz 1</title>
+    <link rel="stylesheet" type="text/css" href="css/Questions.css">
 </head>
 <body>
 

@@ -126,27 +126,51 @@ class db
     public static function insertQuiz($quiz) {
         $questions = array();
         $options = array();
-//        echo "in db file";
         $date = "'" . date("Y-m-d") . "'";
         $datetime = "'" . date("Y-m-d h:i:s") . "'";
-//        echo "<br>";
         $name = "'" . $quiz->getQuizName() . "'";
-        $sql = "INSERT INTO quizweb.quiz (Quiz_name, Url, Date_created, Date_updated) VALUES ($name, 'test', $date, $datetime);";
+
+        //unpack
         for ($i = 0; $i < $quiz->getAmntQuests(); $i++) {
             $questions[$i] = $quiz->getQuestions()[$i];
             for ($j = 0; $j < $quiz->getQuestions()[$i]->getAmntOpts(); $j++) {
                 $options[$j] = $quiz->getQuestions()[$i]->getOptions()[$j];
             }
         }
-        $conn = new mysqli(Constf::host, Constf::username, Constf::password, Constf::dbName);
+
+        //connection
+        $conn = new mysqli(Constf::host, Constf::username, Constf::password, Constf::dbName, 8889);
         if ($conn->connect_error) {
-//            echo "Connection Failed";
+            echo "Connection Failed";
             die("Connection failed: " . $conn->connect_error);
         }
-        //TODO this method is still incomplete
+
+        //insert the quiz
+        $stm = $conn->prepare("INSERT INTO quizweb.Quiz (Quiz_name, Url, Date_created, Date_updated)  VALUES (?, ?, ?, ?)");
+        $quizUrl = "tesfda";
+        $stm->bind_param("ssss", $name, $quizUrl, $date, $datetime);
+        if ($stm-> execute() === true)
+            $quizId = $stm->insert_id;
+        $stm->close();
+
+        //Inseting questions and options together
+        $stmq = $conn->prepare("INSERT INTO quizweb.Question (Question_id, Quiz_id, Question_S) VALUES (?, ?, ?)");
+        $stmo = $conn->prepare("INSERT INTO quizweb.Options (Option_id, Question_id, Option_S) VALUES (?, ?, ?)");
         foreach ($questions as $q){
-            $sql .= "INSERT INTO quizweb.question (Question_id, Quiz_id, Question_S) VALUES ($q->getQuestionId(), , $q->getQuestionS())";
+            $qId = $q->getQuestionId();
+            $qStr = $q->getQuestionS();
+            $stmq->bind_param("iis", $qId, $quizId, $qStr);
+            $stmq->execute();
+            foreach ($options as $o) {
+                $oId = $o->getOptionId();
+                $oStr = $o->getOptionS();
+                $stmo->bind_param("iis", $oId, $qId, $oStr);
+                $stmo->execute();
+            }
         }
+        $stmq->close();
+        $stmo->close();
+        //TODO this method is still incomplete
     }
 }
 
