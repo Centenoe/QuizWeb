@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>quiz web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--color ideas:
+     #0A2933 (dark steel blue)
+     #4F3847 (red/maroon)
+     #394572 (purpleish)
+     #A5603B (orange!)
+     #0047FC (solid blue)-->
+
+    <!-- this will deal with all the "style" of the navbar-->
+    <style>
+        .navbar {
+            margin-bottom:0;
+            border-radius:0;
+            background-color:#A5603B;
+            color:#FFF;
+            padding: .4% 0;
+            font-size: 1.2em;
+            border:0;
+        }
+        .navbar-brand{
+            float: left;
+            min-height: 55px;
+            padding: 0 15px 15px;
+        }
+        .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+            color: #FFF;
+            background-color: #A5603B;
+        }
+        .navbar-inverse .navbar-nav li a{
+            color: #D5D5D5;
+        }
+
+    </style>
+</head>
+<body>
+<!--nav bar/ top menu -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid"><!--start of container fluid-->
+            <div class="navbar-header">
+                <!--start of mobile bar icon using the traditional hamburger menu -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--end of mobile hamburger style-->
+                <!--logo on the navbar-->
+                <a class="navbar-brand" href="index.html"><img src="../img/vidmefinal.png"/></a><!--PLACEHOLDER FOR THE LOGO REMOVE THIS ONCE LOGO IS PLACED--><!--end of logo on navbar-->
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right"><!--start of navbar tab, the tab buttons will start at the right of the logo no matter the size-->
+                    <li class="active"><a href="#">Home </a></li>
+                    <li><a href="#"> About </a> </li>
+                    <li><a href="#"> Take a quiz </a> </li>
+                    <li><a href="#"> Make a quiz </a> </li>
+                    <li><a href="#"> About us </a> </li>
+                </ul><!--end of navbar tabs-->
+            </div>
+        </div><!--end of container fluid-->
+    </nav><!-- end of nav bar/ top menu -->
+
+</body>
+</html>
