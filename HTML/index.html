@@ -8,15 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--color ideas:
-     #0A2933 (dark steelZA blue)
-     #4F3847 (red/maroon)
-     #394572 (purpleish)
-     #A5603B (orange!)
-     #0047FC (solid blue)-->
 
     <!-- this will deal with all the "style" of the navbar-->
-    <link rel="stylesheet" type="text/css" href="css/Homepage.css">
+    <link rel="stylesheet" type="text/css" href="../css/Homepage.css">
 </head>
 <body>
 <!--nav bar/ top menu -->
@@ -30,7 +24,7 @@
                     <span class="icon-bar"></span>
                 </button><!--end of mobile hamburger style-->
                 <!--logo on the navbar-->
-                <a class="navbar-brand" href="index.html"><img src="../img/vidmefinal.png"/></a><!--PLACEHOLDER FOR THE LOGO REMOVE THIS ONCE LOGO IS PLACED--><!--end of logo on navbar-->
+                <a class="navbar-brand" href="index.html"><img src=""/></a><!--PLACEHOLDER FOR THE LOGO REMOVE THIS ONCE LOGO IS PLACED--><!--end of logo on navbar-->
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right"><!--start of navbar tab, the tab buttons will start at the right of the logo no matter the size-->
@@ -43,6 +37,25 @@
             </div>
         </div><!--end of container fluid-->
     </nav><!-- end of nav bar/ top menu -->
+
+<div id="tutorialSlideshow" class="carousel slide" data-rider="carousel"><!-- start of slide show-->
+    <ol class="carousel-indicators">
+        <li data-target="#tutorialSlideshow" data-slide-to="0" class="active"> </li>
+        <li data-target="#tutorialSlideshow" data-slide-to="1"> </li>
+        <li data-target="#tutorialSlideshow" data-slide-to="2"> </li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="../img/header.png"/>
+            <div class="carousel-caption">
+            <h1> Welcome to Quiz Web</h1>
+            <br>
+            <button type="button" class="btn btn-default">Get Started</button>
+        </div>
+        </div>
+    </div>
+</div><!---->
 
 </body>
 </html>
