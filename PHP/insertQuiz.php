@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
             if ($q === "") continue;
             $question = new Question($countQ, Constf::sanatize($q));
 
-            //get the answer before making the options
+            //Get the answer before making the options
             if (isset($_POST['answer']))
                 $answer = $_POST['answer'][$countQ];
 

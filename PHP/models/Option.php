@@ -7,10 +7,19 @@
 
 class Option
 {
-    private $optionId;
-    private $optionS;
-    private $isAnswer = false;
 
+    // --- Fields --- //
+    private $optionId = 0;
+    private $optionS = "";
+    private $isAnswer = false;
+    private $reason = "";
+
+    /**
+     * Option constructor.
+     *
+     * @param $optionId id of that unique option
+     * @param $optionS the actual string for the option
+     */
     public function __construct($optionId, $optionS)
     {
         $this->optionId = $optionId;
@@ -18,7 +27,9 @@ class Option
     }
 
     /**
-     * @return bool
+     * if this option is a Answer to a question
+     *
+     * @return true else false
      */
     public function isAnswer(): bool
     {
@@ -26,7 +37,9 @@ class Option
     }
 
     /**
-     * @param bool $isAnswer
+     * set if this option is an answer or not
+     *
+     * @param bool $isAnswer to chang if it is or isnt
      */
     public function setIsAnswer(bool $isAnswer)
     {
@@ -34,7 +47,30 @@ class Option
     }
 
     /**
-     * @return mixed
+     * Get the reason for why this was the answer
+     *
+     * @return string the reason
+     */
+    public function getReason(): string
+    {
+        return $this->reason;
+    }
+
+    /**
+     * Set the reason for why this option is correct
+     *
+     * @param string $reason the reason
+     */
+    public function setReason(string $reason)
+    {
+        $this->reason = $reason;
+    }
+
+
+    /**
+     * get the option id for this option
+     *
+     * @return the id in int format
      */
     public function getOptionId(): int
     {
@@ -42,7 +78,9 @@ class Option
     }
 
     /**
-     * @param mixed $optionId
+     * set the option id for the option
+     *
+     * @param $optionId new id for the option in int format
      */
     public function setOptionId($optionId)
     {
@@ -50,7 +88,9 @@ class Option
     }
 
     /**
-     * @return mixed
+     * get the options string
+     *
+     * @return the string of the option
      */
     public function getOptionS(): string
     {
@@ -58,7 +98,9 @@ class Option
     }
 
     /**
-     * @param mixed $optionS
+     * set the option for the string
+     *
+     * @param $optionS the new string for the option
      */
     public function setOptionS($optionS)
     {

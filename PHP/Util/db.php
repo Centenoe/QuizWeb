@@ -153,9 +153,10 @@ class db
             $quizId = $stm->insert_id;
         $stm->close();
 
-        //Inseting questions and options together
+        //Inserting questions and options together
         $stmq = $conn->prepare("INSERT INTO quizweb.Question (Question_id, Quiz_id, Question_S) VALUES (?, ?, ?)");
         $stmo = $conn->prepare("INSERT INTO quizweb.Options (Option_id, Question_id, Option_S) VALUES (?, ?, ?)");
+        $stma = $conn->prepare("INSERT INTO quizweb.answer (Option_id, Question_id, Reason) VALUES (?, ?, ?)");
         foreach ($questions as $q){
             $qId = $q->getQuestionId();
             $qStr = $q->getQuestionS();
@@ -166,11 +167,16 @@ class db
                 $oStr = $o->getOptionS();
                 $stmo->bind_param("iis", $oId, $qId, $oStr);
                 $stmo->execute();
+                if ($o->isAnswer()) {
+                    $oReason = $o->getReason();
+                    $stma->bind_param("iis", $oId, $qId, $oReason);
+                    $stma->execute();
+                }
             }
         }
         $stmq->close();
         $stmo->close();
-        //TODO this method is still incomplete
+        $stma->close();
     }
 }
 

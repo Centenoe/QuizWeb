@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="25dd35c7-5ede-4b22-bb83-2f93573b0b04" name="XMAPP" url="http://localhost:80/QuizWeb">
+        <fileTransfer port="0" mountedRoot="E:\Program Files\XAMPP\htdocs" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

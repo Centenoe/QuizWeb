@@ -73,7 +73,9 @@ class Quiz
     }
 
     /**
-     * @return mixed
+     * get the is of the quiz
+     *
+     * @return the quiz id
      */
     public function getQuizId()
     {
@@ -81,7 +83,9 @@ class Quiz
     }
 
     /**
-     * @param mixed $quizId
+     * set the new id for the quiz
+     *
+     * @param mixed $quizId set the id of the quiz
      */
     public function setQuizId($quizId)
     {
@@ -89,6 +93,8 @@ class Quiz
     }
 
     /**
+     * get the name of the quiz
+     *
      * @return string
      */
     public function getQuizName(): string
@@ -104,9 +110,16 @@ class Quiz
         $this->quizName = $quizName;
     }
 
+    /**
+     * The string representation for the quiz
+     *
+     * (for testing)
+     *
+     * @return string representation of a quiz object
+     */
     public function __toString()
     {
-        $result =  "Quiz id: " . $this->quizId . "<br>" .
+        $result = "Quiz id: " . $this->quizId . "<br>" .
             "Quiz Name: " . $this->quizName;
         foreach ($this->getQuestions() as $q) {
             $result .= $q->getQuestionS() . "<br>";
