@@ -34,11 +34,17 @@ if (isset($_POST['submit'])) {
             if ($q === "") continue;
             $question = new Question($countQ, Constf::sanatize($q));
 
+            //get the answer before making the options
+            if (isset($_POST['answer']))
+                $answer = $_POST['answer'][$countQ];
+
             //Check the Choices
             if (isset($_POST['choiceS'])) {
                 foreach ($_POST['choiceS'] as $o) {
                     if ($o === "") continue;
                     $option = new Option($countO, Constf::sanatize($o));
+                    if ($answer === $countO)
+                        $option->setIsAnswer(true);
                     $countO++;
                     $question->addOption($option);
                 }
