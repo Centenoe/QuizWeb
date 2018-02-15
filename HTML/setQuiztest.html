@@ -6,23 +6,28 @@
     <link rel="stylesheet" type="text/css" href="../css/makeQuiz.css">
 </head>
 <body>
+<div class="header">
+    <h1>Make a Quiz</h1>
+</div>
 <form method="post" action="insertPhp.php" id="form">
-    Quiz Name: <input name="quizName" type="text" required="required" placeholder="quiz name...">
+    <input id="quizname" name="quizName" type="text" required="required" placeholder="Quiz Name">
     <br><br>
-    Question 1: <input type="text" name="questionS[]"><br>
-    Choice 1: <input type="text" name="choiceS[]"><br>
-    Choice 2: <input type="text" name="choiceS[]"><br>
-    Choice 3: <input type="text" name="choiceS[]"><br>
-    Choice 4: <input type="text" name="choiceS[]"><br>
+    Question 1: <input id="question" type="text" name="questionS[]"><br>
+    <div id="options">
+        Choice 1: <input type="text" name="choiceS[]"><br>
+        Choice 2: <input type="text" name="choiceS[]"><br>
+        Choice 3: <input type="text" name="choiceS[]"><br>
+        Choice 4: <input type="text" name="choiceS[]"><br>
+    </div>
     Answer:
-    <select name="answer[]">
+    <select id="answer" name="answer[]">
         <option value="0">Option 1</option>
         <option value="1">Option 2</option>
         <option value="2">Option 3</option>
         <option value="3">Option 4</option>
     </select><br>
     Reason: <br>
-    <textarea rows="10" cols="30" name="reason[]"></textarea>
+    <textarea id="reason" rows="10" cols="30" name="reason[]"></textarea>
     <br><br>
     <input type="submit" name="submit">
 </form>

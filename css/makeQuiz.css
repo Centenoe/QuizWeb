@@ -1,16 +1,21 @@
-input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px;
-    border-color: #4caf50;
-    border-radius: 4px;
-    font-size: large;
+.header {
+    margin: auto;
+    text-align: center;
+    font-family: Helvetica;
 }
 
 #form {
-    padding: 40px;
-    margin: 0px 200px 0px 200px;
+    padding: 4px;
+    margin: 25px 200px 25px 200px;
     font-size: 20px;
+    text-align: justify;
+}
+
+#quizname {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 15px;
+    border: none;
+    border-bottom: 4px solid #4caf50;
+    font-size: large;
 }
