@@ -2,23 +2,23 @@
 <html>
 <head>
     <title>Make A Quiz</title>
-    <link rel="stylesheet" type="text/css" href="../css/Base.css">
-    <link rel="stylesheet" type="text/css" href="../css/makeQuiz.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/QuizWeb/css/Base.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:8888/QuizWeb/css/MakeQuiz.css">
 </head>
 <body>
 <div class="header">
     <h1>Make a Quiz</h1>
 </div>
-<form method="post" action="insertPhp.php" id="form">
+<form method="post" action="../PHP/insertQuiz.php" id="form">
     <input id="quizname" name="quizName" type="text" required="required" placeholder="Quiz Name">
     <br><br>
-    Question 1: <input id="question" type="text" name="questionS[]"><br>
-    <div id="options">
-        Choice 1: <input type="text" name="choiceS[]"><br>
-        Choice 2: <input type="text" name="choiceS[]"><br>
-        Choice 3: <input type="text" name="choiceS[]"><br>
-        Choice 4: <input type="text" name="choiceS[]"><br>
-    </div>
+    <input class="question" type="text" name="questionS[]" placeholder="Question 1"><br>
+    <ul id="options">
+        <input class="options" type="text" name="choiceS[]" placeholder="Option1"><br>
+        <input class="options" type="text" name="choiceS[]" placeholder="Option 2"><br>
+        <input class="options" type="text" name="choiceS[]" placeholder="Option 3"><br>
+        <input class="options" type="text" name="choiceS[]" placeholder="Option 4"><br>
+    </ul>
     Answer:
     <select id="answer" name="answer[]">
         <option value="0">Option 1</option>

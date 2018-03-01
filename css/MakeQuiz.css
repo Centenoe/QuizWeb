@@ -1,0 +1,52 @@
+.header {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: xx-large;
+}
+
+#form {
+    padding: 4px;
+    margin: 25px 200px 25px 200px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#quizname {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 15px;
+    border: none;
+    border-bottom: 4px solid #ff9100;
+    font-size: xx-large;
+}
+
+#quizname:focus, #quizname:hover {
+    border-bottom: 4px solid #4caf50;
+}
+
+.question {
+    border: none;
+    border-bottom: 4px solid #ff9100;
+    font-size: x-large;
+    width: 75%;
+    padding: 10px;
+    margin: 0px 15px 20px 15px;
+}
+
+.question:focus, .question:hover {
+    border-bottom: 4px solid #4caf50;
+}
+
+.options {
+    border: none;
+    border-bottom: 4px solid #ff9100;
+    font-size: large;
+    width: 50%;
+    padding: 10px;
+    margin: 0px 15px 20px 15px;
+}
+
+.options:focus, .options:hover {
+    border-bottom: 4px solid #4caf50;
+}
+
