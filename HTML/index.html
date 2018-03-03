@@ -14,49 +14,60 @@
 </head>
 <body>
 <!--nav bar/ top menu -->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid"><!--start of container fluid-->
-            <div class="navbar-header">
-                <!--start of mobile bar icon using the traditional hamburger menu -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button><!--end of mobile hamburger style-->
-                <!--logo on the navbar-->
-                <a class="navbar-brand" href="index.html"><img src=""/></a><!--PLACEHOLDER FOR THE LOGO REMOVE THIS ONCE LOGO IS PLACED--><!--end of logo on navbar-->
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right"><!--start of navbar tab, the tab buttons will start at the right of the logo no matter the size-->
-                    <li class="active"><a href="#">Home </a></li>
-                    <li><a href="#"> Help </a> </li>
-                    <li><a href="#"> Take a quiz </a> </li>
-                    <li><a href="setQuiztest.html"> Make a quiz </a> </li>
-                    <li><a href="#"> About us </a> </li>
-                </ul><!--end of navbar tabs-->
-            </div>
-        </div><!--end of container fluid-->
-    </nav><!-- end of nav bar/ top menu -->
-
-<div id="tutorialSlideshow" class="carousel slide" data-rider="carousel"><!-- start of slide show-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid"><!--start of container fluid-->
+        <div class="navbar-header">
+            <!--start of mobile bar icon using the traditional hamburger menu -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button><!--end of mobile hamburger style-->
+            <!--logo on the navbar-->
+            <a class="navbar-brand" href="index.html"><img src=""/></a><!--PLACEHOLDER FOR THE LOGO REMOVE THIS ONCE LOGO IS PLACED--><!--end of logo on navbar-->
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right"><!--start of navbar tab, the tab buttons will start at the right of the logo no matter the size-->
+                <li class="active"><a href="#">Home </a></li>
+                <li><a href="#"> Help </a> </li>
+                <li><a href="#"> Take a quiz </a> </li>
+                <li><a href="setQuiztest.html"> Make a quiz </a> </li>
+                <li><a href="#"> About us </a> </li>
+            </ul><!--end of navbar tabs-->
+        </div>
+    </div><!--end of container fluid-->
+</nav><!-- end of nav bar/ top menu -->
+<!-- Star of slide code-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel"><!-- start of slide show-->
+    <!-- this is the indicators of the slide show -->
     <ol class="carousel-indicators">
-        <li data-target="#tutorialSlideshow" data-slide-to="0" class="active"> </li>
-        <li data-target="#tutorialSlideshow" data-slide-to="1"> </li>
-        <li data-target="#tutorialSlideshow" data-slide-to="2"> </li>
+        <li data-target="#myCarousel" data-slide-to="0" class="active"> </li>
+        <li data-target="#myCarousel" data-slide-to="1"> </li>
+        <li data-target="#myCarousel" data-slide-to="2"> </li>
     </ol>
-
-    <div class="carousel-inner" role="listbox">
+    <!-- Star of the wrapper for the slides -->
+    <div id="slidewrapper"class="carousel-inner"> <!-- Holds the images for the slides -->
         <div class="item active">
-            <img src="../img/header.png"/>
-            <div class="carousel-caption">
+            <img src="../img/header.svg" alt="First slide">
+        </div>
+        <div class="carousel-caption">
             <h1> Welcome to Quiz Web</h1>
             <br>
             <button type="button" class="btn btn-default">Get Started</button>
         </div>
+        <div class="item">
+            <img src="../img/Captugdfgdsfgsre.PNG" alt="Second slide">
         </div>
-    </div>
-</div><!---->
+        <div class="item">
+            <img src="../img/header.svg" alt="Third slide">
+        </div>
+    </div><!-- End of the wrapper for the slides -->
+</div><!-- End of slide code-->
 
+<div class="container-fluid">
+    <!--<p>-->
+    <!--This is going to be an example of what this looks like-->
+    <!--</p>-->
+</div>
 </body>
 </html>
-
