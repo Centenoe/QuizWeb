@@ -1,30 +1,16 @@
-[build]
-publish = "public"
-command = "hugo"
 
-[context.production.environment]
-HUGO_VERSION = "0.37.1"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+buildDrafts = false
+baseURL = "https://QuizWeb.com/"
+canonifyURLs = true
+title = "QuizWeb"
 
-[context.split1]
-command = "hugo --enableGitInfo"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
 
-[context.split1.environment]
-HUGO_VERSION = "0.37.1"
-HUGO_ENV = "production"
-
-[context.deploy-preview]
-command = "hugo -b $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-HUGO_VERSION = "0.37.1"
-
-[context.branch-deploy]
-command = "hugo -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy.environment]
-HUGO_VERSION = "0.37.1"
-
-[context.next.environment]
-HUGO_ENABLEGITINFO = "true"
+[params]
+  subtitle = "Hugo is Absurdly Fast!"
+  author = "Edgar Centeno and Joe Matteson"
