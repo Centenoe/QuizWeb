@@ -20,4 +20,14 @@
 .navbar-inverse .navbar-nav li a{
     color: #D5D5D5;
 }
-.carousel img {width: 100%}
+.carousel-inner #slidewrapper .slide .slideshow img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 2560px;
+    min-width: 900px;
+}
+
+/*.container-fluid{*/
+/*margin: 25%;*/
+/*width: 100%;*/
+/*}*/

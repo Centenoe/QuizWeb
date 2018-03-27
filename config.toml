@@ -1,0 +1,16 @@
+
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+buildDrafts = false
+baseURL = "https://QuizWeb.com/"
+canonifyURLs = true
+title = "QuizWeb"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  subtitle = "Hugo is Absurdly Fast!"
+  author = "Edgar Centeno and Joe Matteson"
